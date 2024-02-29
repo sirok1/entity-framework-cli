@@ -4,7 +4,7 @@ public class DotEnv
 {
     public static void Load(string filepath)
     {
-        if (!File.Exists(filepath))
+        if (!File.Exists(filepath)) 
             return;
         foreach (var line in File.ReadAllLines(filepath))
         {

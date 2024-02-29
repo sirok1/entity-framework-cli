@@ -1,15 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using working_with_db;
-using Microsoft.Extensions.Configuration.EnvironmentVariables;
 
-Console.WriteLine("Hello, World!");
-var root = Directory.GetCurrentDirectory();
-var dotenv = Path.Combine(root, ".env");
-DotEnv.Load(dotenv);
+namespace working_with_db
+{
+    class Program
+    {
+        public static void Main(string[] args)
+            => CreateHostBuilder().Build().Run();
+        
+        public static IHostBuilder CreateHostBuilder(string[] args)
+            => Host.CreateDefaultBuilder(args)
+    }
+}
 
-var config =
-    new ConfigurationBuilder()
-        .AddEnvironmentVariables()
-        .Build();
 
