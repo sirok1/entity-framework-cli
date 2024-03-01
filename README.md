@@ -1,5 +1,8 @@
 # Entity-framework
 
+## Перед запуском
+Создайте файл `.env` по примеру из `.env.template`
+
 ## Разворачиваение докер композ
 ```
 docker compose up -d --force-recreate
