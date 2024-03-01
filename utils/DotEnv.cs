@@ -1,4 +1,4 @@
-﻿namespace working_with_db;
+﻿namespace Entity_framework_cli.utils;
 
 public class DotEnv
 {

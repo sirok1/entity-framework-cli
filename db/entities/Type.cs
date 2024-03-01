@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace working_with_db.db.entities;
+namespace Entity_framework_cli.db.entities;
 
 [Table("Type")]
 public class TypeDb
