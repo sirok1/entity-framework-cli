@@ -31,28 +31,28 @@ public class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<PropertyObject>()
-            .HasOne(b => b.district)
-            .WithMany(a => a.propertyObjects)
-            .HasForeignKey(b => b.districtId);
+            .HasOne(b => b.District)
+            .WithMany(a => a.PropertyObjects)
+            .HasForeignKey(b => b.DistrictId);
         modelBuilder.Entity<PropertyObject>()
-            .HasOne(b => b.type)
-            .WithMany(a => a.propertyObjects)
-            .HasForeignKey(b => b.typeId);
+            .HasOne(b => b.Type)
+            .WithMany(a => a.PropertyObjects)
+            .HasForeignKey(b => b.TypeId);
         modelBuilder.Entity<PropertyObject>()
-            .HasOne(b => b.material)
-            .WithMany(a => a.propertyObjects)
-            .HasForeignKey(b => b.materialId);
+            .HasOne(b => b.Material)
+            .WithMany(a => a.PropertyObjects)
+            .HasForeignKey(b => b.MaterialId);
         modelBuilder.Entity<Estimates>()
-            .HasOne(b => b.propertyObject)
-            .WithMany(a => a.estimates)
-            .HasForeignKey(b => b.propertyObjectId);
+            .HasOne(b => b.PropertyObject)
+            .WithMany(a => a.Estimates)
+            .HasForeignKey(b => b.PropertyObjectId);
         modelBuilder.Entity<Estimates>()
-            .HasOne(b => b.criteria)
-            .WithMany(a => a.estimates)
-            .HasForeignKey(b => b.creteriaId);
+            .HasOne(b => b.Criteria)
+            .WithMany(a => a.Estimates)
+            .HasForeignKey(b => b.CreteriaId);
         modelBuilder.Entity<Selling>()
-            .HasOne(b => b.agnet)
-            .WithMany(a => a.sellings)
-            .HasForeignKey(b => b.agentId);
+            .HasOne(b => b.Agnet)
+            .WithMany(a => a.Sellings)
+            .HasForeignKey(b => b.AgentId);
     }
 }

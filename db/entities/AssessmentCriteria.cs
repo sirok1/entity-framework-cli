@@ -7,8 +7,8 @@ namespace Entity_framework_cli.db.entities;
 public class AssessmentCriteria
 {
     [Key]
-    public int id { get; set; }
+    public int Id { get; set; }
     [Required]
-    public string name { get; set; }
-    public ICollection<Estimates> estimates { get; set; }
+    public string Name { get; set; }
+    public ICollection<Estimates> Estimates { get; set; }
 }

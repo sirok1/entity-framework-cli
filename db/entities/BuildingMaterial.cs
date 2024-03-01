@@ -7,8 +7,8 @@ namespace Entity_framework_cli.db.entities;
 public class BuildingMaterial
 {
     [Key]
-    public int id { get; set; }
+    public int Id { get; set; }
     [Required]
-    public string name { get; set; }
-    public ICollection<PropertyObject> propertyObjects { get; set; }
+    public string Name { get; set; }
+    public ICollection<PropertyObject> PropertyObjects { get; set; }
 }

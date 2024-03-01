@@ -7,12 +7,12 @@ namespace Entity_framework_cli.db.entities;
 public class Estimates
 {
     [Key]
-    public int id { get; set; }
-    public int propertyObjectId { get; set; }
-    public PropertyObject propertyObject { get; set; }
-    public DateTime estimateDate { get; set; }
-    public int creteriaId { get; set; }
-    public AssessmentCriteria criteria { get; set; }
+    public int Id { get; set; }
+    public int PropertyObjectId { get; set; }
+    public PropertyObject PropertyObject { get; set; }
+    public DateTime EstimateDate { get; set; }
+    public int CreteriaId { get; set; }
+    public AssessmentCriteria Criteria { get; set; }
     [Required]
-    public int estimate { get; set; }
+    public int Estimate { get; set; }
 }

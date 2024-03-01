@@ -5,11 +5,11 @@ namespace Entity_framework_cli.db.entities;
 public class Selling
 {
     [Key]
-    public int id { get; set; }
+    public int Id { get; set; }
     [Required]
-    public PropertyObject propertyObject { get; set; }
-    public DateTime sellDate { get; set; }
-    public int agentId { get; set; }
-    public EstateAgent agnet { get; set; }
-    public double cost { get; set; }
+    public PropertyObject PropertyObject { get; set; }
+    public DateTime SellDate { get; set; }
+    public int AgentId { get; set; }
+    public EstateAgent Agnet { get; set; }
+    public double Cost { get; set; }
 }

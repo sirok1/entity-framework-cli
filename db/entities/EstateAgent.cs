@@ -7,13 +7,13 @@ namespace Entity_framework_cli.db.entities;
 public class EstateAgent
 {
     [Key]
-    public int id { get; set; }
+    public int Id { get; set; }
     [Required]
-    public string surname { get; set; }
+    public string Surname { get; set; }
     [Required]
-    public string name { get; set; }
+    public string Name { get; set; }
     [Required]
-    public string fatherName { get; set; }
-    public string phone { get; set; }
-    public ICollection<Selling> sellings { get; set; }
+    public string FatherName { get; set; }
+    public string Phone { get; set; }
+    public ICollection<Selling> Sellings { get; set; }
 }

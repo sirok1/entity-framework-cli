@@ -7,20 +7,20 @@ namespace Entity_framework_cli.db.entities;
 public class PropertyObject
 {
     [Key]
-    public int id { get; set; }
-    public int districtId { get; set; }
-    public District district { get; set; }
-    public string address { get; set; }
-    public int floor { get; set; }
-    public int roomsAmount { get; set; }
-    public int typeId { get; set; }
-    public TypeDb type { get; set; }
+    public int Id { get; set; }
+    public int DistrictId { get; set; }
+    public District District { get; set; }
+    public string Address { get; set; }
+    public int Floor { get; set; }
+    public int RoomsAmount { get; set; }
+    public int TypeId { get; set; }
+    public TypeDb Type { get; set; }
     public int Status { get; set; }
-    public double cost { get; set; }
-    public string description { get; set; }
-    public int materialId { get; set; }
-    public BuildingMaterial material { get; set; }
-    public double area { get; set; }
-    public DateTime updated { get; set; }
-    public ICollection<Estimates> estimates { get; set; }
+    public double Cost { get; set; }
+    public string Description { get; set; }
+    public int MaterialId { get; set; }
+    public BuildingMaterial Material { get; set; }
+    public double Area { get; set; }
+    public DateTime Updated { get; set; }
+    public ICollection<Estimates> Estimates { get; set; }
 }
