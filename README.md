@@ -1,4 +1,4 @@
-# Entity-framework
+# entity-framework-cli
 
 ## Перед запуском
 Создайте файл `.env` по примеру из `.env.template`
