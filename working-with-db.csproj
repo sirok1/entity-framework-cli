@@ -11,6 +11,9 @@
 
     <ItemGroup>
         <Folder Include="pg\"/>
+        <None Update=".env">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
     <ItemGroup>
