@@ -10,4 +10,5 @@ public class BuildingMaterial
     public int id { get; set; }
     [Required]
     public string name { get; set; }
+    public ICollection<PropertyObject> propertyObjects { get; set; }
 }

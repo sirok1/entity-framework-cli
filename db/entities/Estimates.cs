@@ -8,10 +8,10 @@ public class Estimates
 {
     [Key]
     public int id { get; set; }
-    [Required]
+    public int propertyObjectId { get; set; }
     public PropertyObject propertyObject { get; set; }
     public DateTime estimateDate { get; set; }
-    [Required]
+    public int creteriaId { get; set; }
     public AssessmentCriteria criteria { get; set; }
     [Required]
     public int estimate { get; set; }

@@ -15,4 +15,5 @@ public class EstateAgent
     [Required]
     public string fatherName { get; set; }
     public string phone { get; set; }
+    public ICollection<Selling> sellings { get; set; }
 }

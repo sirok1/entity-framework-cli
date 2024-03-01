@@ -16,6 +16,10 @@ dotnet ef database update
 
 или из Rider `tools` -> `Entity framework core` -> `Add migration`; `tools` -> `Entity framework core` -> `Update database`
 
+## Схема базы данных
+![schemeImage](./assets/bd-scheme.png)
+
+
 ## Если не найден dotnet-ef
 ```
 dotnet tool install --global dotnet-ef --version 8.0.0

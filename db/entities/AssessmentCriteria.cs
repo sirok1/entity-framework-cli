@@ -10,4 +10,5 @@ public class AssessmentCriteria
     public int id { get; set; }
     [Required]
     public string name { get; set; }
+    public ICollection<Estimates> estimates { get; set; }
 }

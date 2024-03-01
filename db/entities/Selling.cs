@@ -9,7 +9,7 @@ public class Selling
     [Required]
     public PropertyObject propertyObject { get; set; }
     public DateTime sellDate { get; set; }
-    [Required]
+    public int agentId { get; set; }
     public EstateAgent agnet { get; set; }
     public double cost { get; set; }
 }
