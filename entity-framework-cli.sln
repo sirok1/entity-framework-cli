@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "working-with-db", "working-with-db.csproj", "{F48F5123-B924-42F8-9E65-DC9B90BAE998}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entity-framework-cli", "entity-framework-cli.csproj", "{F48F5123-B924-42F8-9E65-DC9B90BAE998}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
