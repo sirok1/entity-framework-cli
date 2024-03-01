@@ -13,6 +13,9 @@
         <None Update=".env">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
+        <None Update="seed.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
     </ItemGroup>
 
     <ItemGroup>
