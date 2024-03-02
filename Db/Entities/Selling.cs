@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Entity_framework_cli.db.entities;
+namespace Entity_framework_cli.Db.Entities;
 
 public class Selling
 {

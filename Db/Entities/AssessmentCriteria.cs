@@ -1,14 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entity_framework_cli.db.entities;
+namespace Entity_framework_cli.Db.Entities;
 
-[Table("Building material")]
-public class BuildingMaterial
+[Table("Assessment criteria")]
+public class AssessmentCriteria
 {
     [Key]
     public int Id { get; set; }
     [Required]
     public string Name { get; set; }
-    public ICollection<PropertyObject> PropertyObjects { get; set; }
+    public ICollection<Estimates> Estimates { get; set; }
 }

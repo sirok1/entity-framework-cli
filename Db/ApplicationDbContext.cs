@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Entity_framework_cli.db.entities;
-using Entity_framework_cli.utils;
+using Entity_framework_cli.Db.Entities;
+using Entity_framework_cli.Utils;
 
-namespace Entity_framework_cli.db;
+namespace Entity_framework_cli.Db;
 
 public class ApplicationDbContext : DbContext
 {

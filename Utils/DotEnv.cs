@@ -1,4 +1,4 @@
-﻿namespace Entity_framework_cli.utils;
+﻿namespace Entity_framework_cli.Utils;
 
 public class DotEnv
 {
