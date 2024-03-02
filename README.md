@@ -30,7 +30,7 @@ dotnet ef database update
 или из Rider `tools` -> `Entity framework core` -> `Add migration`
 
 ## Схема базы данных
-![schemeImage](./assets/bd-scheme.png)
+![schemeImage](./Assets/bd-scheme.png)
 
 ## Решение проблем
 
