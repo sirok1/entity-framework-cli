@@ -1,3 +1,64 @@
 {
-  
+  "AssessmentCriterias": [
+    {"Id": 1, "Name": "Quality"},
+    {"Id": 2, "Name": "Location"},
+    {"Id": 3, "Name": "Size"}
+  ],
+  "BuildingMaterial": [
+    {"Id": 1, "Name": "Brick"},
+    {"Id": 2, "Name": "Concrete"},
+    {"Id": 3, "Name": "Wood"}
+  ],
+  "District": [
+    {"Id": 1, "Name": "Central"},
+    {"Id": 2, "Name": "Suburban"},
+    {"Id": 3, "Name": "Rural"}
+  ],
+  "EstateAgent": [
+    {"Id": 1, "Surname": "Smith", "Name": "John", "FatherName": "Doe", "Phone": "123-456-7890"},
+    {"Id": 2, "Surname": "Johnson", "Name": "Jane", "FatherName": "Doe", "Phone": "987-654-3210"}
+  ],
+  "Type": [
+    {"Id": 1, "Name": "Apartment"},
+    {"Id": 2, "Name": "House"},
+    {"Id": 3, "Name": "Land"}
+  ],
+  "PropertyObject": [
+    {
+      "Id": 1,
+      "DistrictId": 1,
+      "Address": "123 Main St",
+      "Floor": 5,
+      "RoomsAmount": 3,
+      "TypeId": 1,
+      "Status": 1,
+      "Cost": 200000,
+      "Description": "Modern apartment in the city center",
+      "MaterialId": 1,
+      "Area": 100,
+      "Updated": "2024-03-15T12:00:00Z"
+    },
+    {
+      "Id": 2,
+      "DistrictId": 2,
+      "Address": "456 Elm St",
+      "Floor": 2,
+      "RoomsAmount": 4,
+      "TypeId": 2,
+      "Status": 1,
+      "Cost": 350000,
+      "Description": "Spacious suburban house",
+      "MaterialId": 2,
+      "Area": 250,
+      "Updated": "2024-03-15T12:00:00Z"
+    }
+  ],
+  "Estimates": [
+    {"Id": 1, "PropertyObjectId": 1, "EstimateDate": "2024-03-15T12:00:00Z", "CreteriaId": 1, "Estimate": 4},
+    {"Id": 2, "PropertyObjectId": 2, "EstimateDate": "2024-03-15T12:00:00Z", "CreteriaId": 2, "Estimate": 5}
+  ],
+  "Selling": [
+    {"Id": 1, "PropertyObjectId": 1, "SellDate": "2024-03-15T12:00:00Z", "AgentId": 1, "Cost": 220000},
+    {"Id": 2, "PropertyObjectId": 2, "SellDate": "2024-03-15T12:00:00Z", "AgentId": 2, "Cost": 360000}
+  ]
 }

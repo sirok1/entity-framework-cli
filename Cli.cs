@@ -1,4 +1,6 @@
-﻿using Entity_framework_cli.Db;
+﻿using System.Text.Json;
+using Entity_framework_cli.Db;
+using Entity_framework_cli.Json;
 using Entity_framework_cli.Utils;
 using Microsoft.EntityFrameworkCore;
 
@@ -49,6 +51,18 @@ public class Cli
                             break;
                     }
                     break;
+                case "seed":
+                    switch (choice)
+                    {
+                        case 1:
+                            seedDb();
+                            break;
+                        case 2:
+                            Loop("main");
+                            break;
+                            
+                    }
+                    break;
                 case "exit":
                     switch (choice)
                     {
@@ -63,6 +77,24 @@ public class Cli
             } 
         }
         
+    }
+
+    private void seedDb()
+    {
+        string json = File.ReadAllText("./seed.json");
+        var scheme = JsonSerializer.Deserialize<Dictionary<string, List<object>>>(json);
+        foreach (var tableName in scheme.Keys)
+        {
+            var tableData = scheme[tableName];
+            var entityType = DbContext.Model.FindEntityType(tableName);
+            // var dbSet = DbContext.Set(entityType);
+            // foreach (var rowData in tableData)
+            // {
+            //     dbSet.Add(rowData);
+            // }
+        }
+
+        DbContext.SaveChanges();
     }
     
 }
